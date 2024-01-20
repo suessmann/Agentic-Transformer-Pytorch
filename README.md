@@ -22,13 +22,13 @@ episodes in
 groups of 
 $n$, then take the maximum from $n$ and average over $N$). We run an experiment on a `walker-medium-replay-v2` dataset, 
 as AT showed the highest boost in comparison to DT.  It turned out that using such evaluation can boost  the returns 
-by almost 33%. On a picture DT with an evaluation protocol from AT is drawn with a dotted line, AT is a solid line.
+by almost 33%. In a picture DT with an evaluation protocol from AT (i.e. taking max) is drawn with a dotted line, AT is a solid line.
 
 ![img.png](img/wandb.png) 
 
 > **It should be noted** that we base our implementation on a DT algorithm from CORL (Tarasov et al., 2023), where a
 plain DT scores 59.86 ± 2.73, which is lower than in AT's implementation of DT. Also, due to some limitations, we 
-could fit `rewards` token into the context of Transformer. Authors did an ablation study without this token and 
+couldn't fit `rewards` token into the context of Transformer. Authors did an ablation study without this token and 
 reported 80.43 average on D4RL, not specifying for datasets.
 
 To emphasize the difference, we also run the following evaluation for AT: we run $N$ episodes with $n$ episodes in 
