@@ -36,9 +36,6 @@ each context, then take **the last** episode return from each group of $n$, then
 the AT should score more with each episode in-context, so we think that our evaluation has some intuitive grounds. 
 As a result, we got almost the same returns as in CORL DT. 
 
-All returns are reported across 3 seeds.
-The wandb logs may be found here: https://wandb.ai/tlab/ORDER/reports/Different-Evaluation-Protocols--Vmlldzo1MTkyODQ5
-
 # Code Organization
 
 Since the difference in evaluation protocols is minor in terms of code, file `at.py` contains an implementation of a 
